@@ -2,16 +2,16 @@
 import React from 'react'
 
 function EyesOnMe() {
-    function focus(){
+    function handleFocus(){
         console.log("Good!")
     }
-    function blur(){
+    function handleBlur(){
         console.log("Hey! Eyes on me!")
     }
   return (
     <div>
-        <button onFocus={focus}
-        onBlur={blur}
+        <button onFocus={handleFocus}
+        onBlur={handleBlur}
         >
             Eyes on me
         </button>
